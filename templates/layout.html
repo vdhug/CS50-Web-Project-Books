@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>{% block title %} {% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+	</head>
+	<body>
+        <nav class="menu">
+            <ul>
+                <li><a href="/">BOOKS</a></li>
+            </ul>
+        </nav>
+
+		<div class="container">
+                {% if notShow is not defined %}
+                    <span class="logout"><a href="{{ url_for('logout') }}">Logout</a></span>
+                {% endif %}
+
+            {% block body %}
+            {% endblock %}
+		</div>
+	</body>
+</html>

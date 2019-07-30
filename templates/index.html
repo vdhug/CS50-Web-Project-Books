@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	Index
+{% endblock %}
+
+{% block body %}
+
+	<h1>Welcome {{user.name}}</h1>
+	<p>You are able to search for books, leave reviews for individual books, and see the reviews made by other people.</p>
+	
+	<div class="functionality">
+		<a href="{{ url_for('books') }}">
+			<div class="functionality-bg"></div>
+			<p>Start - Find a book</p>
+		</a>
+	</div>
+	
+{% endblock %}

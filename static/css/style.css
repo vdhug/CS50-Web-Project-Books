@@ -1,0 +1,328 @@
+body, h1, h2, ul, li, p, dd, dt, dl {
+	margin: 0px;
+	padding: 0px;
+}
+  
+img {
+	display: block;
+	max-width: 100%;
+}
+  
+ul {
+	list-style: none;
+}
+.no-focus-outline a:focus,
+.no-focus-outline button:focus, input:focus, textarea:focus {
+  outline: none;
+}
+
+a {
+	color: #6E1A8B;
+	text-decoration: none;
+	transition: ease .5s;
+}
+
+a:hover {
+	color: #917980;
+}
+
+*[data-uppercase] {
+	text-transform: uppercase;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: url("bg.jpg") repeat center center; 
+	-webkit-font-smoothing: antialiased;
+	display: grid;
+	/* Cria uma coluna a esquerda de 1 fração, uma coluna com no mínimo 450px e no máximo 900px e ao final outra coluna de uma fração */
+	grid-template-columns: 1fr minmax(300px, 1000px) 1fr;
+}
+
+.menu {
+	font-family: 'Merriweather', serif;
+	/* Menu começando na linha 1 e terminando na linha 5 */
+	grid-column: 1 / 4;
+	display: grid;
+	/* Cria uma coluna a esquerda de 1 fração, uma coluna com no mínimo 450px e no máximo 900px e ao final outra coluna de uma fração */
+	grid-template-columns: 1fr minmax(300px, 1000px) 1fr;
+	border-bottom: 5px solid #917980;
+}
+
+.menu ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 10px;
+	grid-column: 2 / 3;
+	border-left: 5px solid #917980;
+}
+
+.menu li a {
+	color: #222;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 3.15rem;
+	letter-spacing: .1em;
+}
+
+.container {
+	box-sizing: border-box;
+	grid-column: 2 / 4;
+	border-left: 5px solid #917980;
+	min-height: 100vh;
+}
+
+.container h1 {
+	text-transform: uppercase;
+	margin: 15px 30px;
+}
+
+.container p {
+	margin: 15px 30px;
+	font-weight: 500;
+}
+
+
+.search {
+	margin: 0px 30px 0;
+	display: flex;
+}
+
+input, textarea {
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	font-size: 1.125em;
+    line-height: 1.66667em;
+    color: #000;
+    padding: 5px 10px;
+    height: 40px;
+    border: 2px solid #917980;
+    background: transparent;
+	margin-bottom: 1em;
+	margin-right: 1%;
+	
+}
+
+input[type='text'], textarea {
+	width: 70%;
+	
+}
+
+input[type='text']:hover, input[type='text']:focus, input[type='email']:hover, input[type='email']:focus, input[type='password']:hover, input[type='password']:focus, textarea:hover, textarea:focus, input[type='decimal']:hover, input[type='decimal']:focus {
+	border-color: #a8979b;
+}
+
+
+input[type='submit'] {
+	width: 10%;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.search input[type='submit']:hover {
+	background-color: #917980;
+	transition: ease .5s;
+}
+
+.result {
+	width: 100%;
+	padding-right: 10px;
+	box-sizing: border-box;
+}
+
+.header {
+	display: block;
+	margin: 20px 30px;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	border-bottom: 2px solid #917980;
+	border-top: 2px solid #917980;
+}
+
+.header td {
+	display: inline-block;
+	box-sizing: border-box;
+	font-size: 1.12rem;
+	font-weight: 600;
+}
+
+.grow-20 {
+	min-width: 20%;
+}
+
+.grow-35 {
+	min-width: 35%;
+}
+
+.book {
+	display: block;
+	margin: 10px 30px;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	border-bottom: 2px solid #917980;
+}
+
+
+.book td {
+	display: inline-block;
+	font-weight: 500;
+	font-size: 1rem;
+
+}
+
+.book a {
+	color: #6E1A8B;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.book a:hover {
+	color: #917980;
+}
+
+
+/* Login and Register Style */
+
+.form {
+	margin: 0px 30px 0px;
+	width: 50%;
+}
+
+.form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form input, .form textarea {
+	width: 100%;
+}
+
+.form textarea {
+	height: 150px;
+}
+
+.form input[type='submit']:hover {
+	background: #917980;
+	transition: ease .5s;
+}
+
+.form p {
+	margin-top: 15px;
+	margin-left: 0px;
+}
+
+.form a:hover {
+	color: #917980;
+}
+
+/* Index style */
+.functionality {
+	margin: 30px 30px 0px;
+	width: 40%;
+	height: 50vh;
+	border: 2px solid #917980;
+}
+
+.functionality-bg {
+	width: 100%;
+	height: 45vh;
+	background: url("bg_search.jpg") repeat center center; 
+	border-bottom: 2px solid #917980;
+}
+
+.functionality p {
+	text-transform: uppercase;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.functionality a {
+	color: #222;
+}
+
+.functionality:hover {
+	background-color: #917980;
+	transition: ease .5s;
+}
+
+/* Logout style */
+.logout {
+	position: absolute;
+	top: 40px;
+	right: 90px;
+	color: #222;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    letter-spacing: .1em;
+}
+
+.logout a:hover {
+	color: #917980;
+}
+
+/* Book details */
+.details {
+	width: 60%;
+	margin-bottom: 30px;
+}
+.details img {
+	margin-left: 30px;
+}
+
+.details span {
+	font-weight: 600;
+}
+
+.details a {
+	box-sizing: border-box;
+    font-size: 1.125em;
+    line-height: 1.66667em;
+	color: #000;
+	margin-left: 30px;
+    padding: 5px 10px;
+    height: 40px;
+    border: 2px solid #917980;
+    background: transparent;
+    margin-right: 1%;
+}
+
+.details a:hover {
+	background: #917980;
+}
+
+/* Reviews style */
+.reviews {
+	margin: 50px 30px 0px;
+	width: 50%;
+}
+
+
+
+.reviews li {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 30px 0px;
+	padding: 20px 10px 10px;
+	border: 2px solid #917980;
+	border-radius: 10px;
+}
+
+.reviews li span {
+	background: #917980;
+    padding: 10px;
+	font-size: .85rem;
+	text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+	top: -15px;
+	left: -20px;
+	border: 2px solid #917980;
+	border-radius: 10px;
+}
