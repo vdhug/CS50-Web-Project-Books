@@ -1,7 +1,7 @@
 # Project 1 - Books
 ### LIVE IN HEROKU: [PROJECT 1 - BOOKS](https://vdhug-cs50-books.herokuapp.com)
 
-## Project One (Books) related to the course [Web Programming with Python and JavaScript](https://online-learning.harvard.edu/course/cs50s-web-programming-python-and-javascript) from HavardX through EDX
+### Project One (Books) related to the course [Web Programming with Python and JavaScript](https://online-learning.harvard.edu/course/cs50s-web-programming-python-and-javascript) from HavardX through EDX
 
 ### Requirements
 
